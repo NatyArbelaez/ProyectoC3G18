@@ -1,0 +1,3 @@
+from .vistaCrearPaciente import VistaCrearPaciente
+from .vistaCrearPerSalud import VistaCrearPerSalud
+from .vistaCrearUsuario import VistaCrearUsuario
