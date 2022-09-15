@@ -46,7 +46,7 @@ SIMPLE_JWT = {
             'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
             'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
             'ROTATE_REFRESH_TOKENS': False,
-        'BLACKLIST_AFTER_ROTATION': True,
+            'BLACKLIST_AFTER_ROTATION': True,
             'UPDATE_LAST_LOGIN': False,
             'ALGORITHM': 'HS256',
             'USER_ID_FIELD': 'id',
@@ -72,7 +72,7 @@ REST_FRAMEWORK = {
             )
 }
 
-AUTH_USER_MODEL = 'authApp.User'
+AUTH_USER_MODEL = 'authApp.Usuario'#######
 
 ROOT_URLCONF = 'scrumCiclo3.urls'
 
@@ -101,10 +101,10 @@ WSGI_APPLICATION = 'scrumCiclo3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dtnss7e11n98q',
-        'USER': 'dwssofxcrxujpx',
-        'PASSWORD': '7cf3a2be2c5e2a5aa9e62a64117a747fe75beb208d1801329b565ff9ed071e88',
-        'HOST': 'ec2-54-204-241-136.compute-1.amazonaws.com',
+        'NAME': 'd88oksfmo30ont',
+        'USER': 'wjtlypdetctkkq',
+        'PASSWORD': '43629dc6a1f653214f438f458b15dfa6203df51f3ab3d36c780dd50106a7c061',
+        'HOST': 'ec2-44-195-132-31.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -150,3 +150,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#import django_heroku
+#django_heroku.settings(locals())
