@@ -1,5 +1,6 @@
 from django.db import models
 from .usuario import Usuario
+from django.db.models.deletion import CASCADE
 
 class PersonalSalud(models.Model):
     id_personalSalud = models.AutoField(primary_key=True)

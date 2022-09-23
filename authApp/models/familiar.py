@@ -1,6 +1,6 @@
 from pyexpat import model
 from statistics import mode
-from tkinter import CASCADE
+from django.db.models.deletion import CASCADE
 from django.db import models
 from .usuario import Usuario
 from .paciente import Paciente
