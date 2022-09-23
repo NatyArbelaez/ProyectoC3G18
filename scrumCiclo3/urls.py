@@ -25,5 +25,9 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('usuario/', views.VistaCrearUsuario.as_view()),
     path ('perSalud/', views.VistaCrearPerSalud.as_view()),
-    path ('paciente', views.VistaCrearPaciente.as_view())
+    path ('paciente/', views.VistaCrearPaciente.as_view()),
+    path ('familiar/', views.vistaFamiliar.as_view()),
+    path ('historia-clinica/', views.vistaHistoriaClin.as_view()),
+    path ('signos-vitales/', views.vistaSignos.as_view())
+
 ]
