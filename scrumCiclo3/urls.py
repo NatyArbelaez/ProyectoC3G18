@@ -27,4 +27,7 @@ urlpatterns = [
     path ('perSalud/', views.VistaCrearPerSalud.as_view()),
     path ('paciente', views.VistaCrearPaciente.as_view()),
     path ('paciente/<int:pk>/', views.VistaDetallePaciente.as_view()),
+    path('familiar/', views.vistaFamiliar.as_view()),
+    path('historia-clinica/', views.vistaHistoriaClin.as_view()),
+    path('signos-vitales/', views.vistaSignos.as_view()),
 ]
