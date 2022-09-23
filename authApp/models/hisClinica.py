@@ -1,5 +1,6 @@
 from django.db import models
 from .paciente import Paciente
+from django.db.models.deletion import CASCADE
 
 class HistoriaClinica(models.Model):
     id_historia_clinica = models.AutoField('Id_HistoriaClinica',primary_key=True)
